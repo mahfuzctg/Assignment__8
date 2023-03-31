@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    color: black;
+}
+.header a {
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+.header img{
+    width: 35px;
+    height: 30px;
+    border-radius: 50px;
+}
