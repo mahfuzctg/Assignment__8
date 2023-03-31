@@ -1,0 +1,29 @@
+.carts{
+    background-color: aliceblue;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.carts img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+   
+}
+.profile img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.carts p{
+    font-size: 10px;
+   font-weight:500
+}
+.SideCart{
+    background-color: aliceblue;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
