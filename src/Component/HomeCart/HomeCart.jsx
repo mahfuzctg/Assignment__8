@@ -8,6 +8,11 @@ const HomeCart = () => {
          .then(res => res.json())
          .then(data => setCart(data))
     }, []);
+
+    const HandleCart = (cart) => {
+       const newCart = [...carts, cart];
+       setCart(newCart);
+    }
     return (
         
         <div className='main row py-5'>
@@ -16,11 +21,12 @@ const HomeCart = () => {
                    {
                     carts.map(cart => <Cart key={cart.id} 
                     cart={cart}
+                    HandleCart={HandleCart}
                     ></Cart>)
                    }
            </div>
           <div className='SideCart col-md-4 col-sm-12'>
-                 Bookmark
+               <Cart cart={carts}></Cart>
           </div>
         </div>
     );

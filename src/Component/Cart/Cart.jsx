@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Cart = (props) => {
     const {pic, name,id, date, profile,title,time} = props.cart;
+      const HandleCart = props.HandleCart;
     return (
         <div className='carts'>  
             <img src={pic} alt="" />
@@ -24,7 +25,7 @@ const Cart = (props) => {
                 </div>
                 <div className='d-flex ms-5 align-items-center'>
                  <p>{time}</p>
-                <button className='btn '><FontAwesomeIcon icon={faBookmark} /></button>
+                <button onClick={()=> HandleCart(props.cart)} className='btn '><FontAwesomeIcon icon={faBookmark} /></button>
                 </div>
                 
                 </div>
