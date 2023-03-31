@@ -26,7 +26,7 @@ const HomeCart = () => {
                    }
            </div>
           <div className='SideCart col-md-4 col-sm-12'>
-               <Cart cart={carts}></Cart>
+                <h3>booking: {carts.length}</h3>
           </div>
         </div>
     );

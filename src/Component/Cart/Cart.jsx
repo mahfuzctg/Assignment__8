@@ -2,6 +2,7 @@ import React from 'react';
 import "./Cart.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+
 const Cart = (props) => {
     const {pic, name,id, date, profile,title,time} = props.cart;
       const HandleCart = props.HandleCart;
@@ -40,7 +41,7 @@ const Cart = (props) => {
             
      
          <div className='cart'>
-      
+            hhh
       </div>
         </div>
       
