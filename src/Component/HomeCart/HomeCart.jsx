@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import SideCart from '../SideCart/SideCart';
 
 const HomeCart = () => {
     const [carts, setCart] = useState([]);
+    const [sideCart, setsideCart] = useState([]);
     useEffect(() => {
          fetch('data.json')
          .then(res => res.json())
@@ -10,8 +12,8 @@ const HomeCart = () => {
     }, []);
 
     const HandleCart = (cart) => {
-       const newCart = [...carts, cart];
-       setCart(newCart);
+       const newCart = [...sideCart, cart];
+       setsideCart(newCart);
     }
     return (
         
@@ -26,7 +28,7 @@ const HomeCart = () => {
                    }
            </div>
           <div className='SideCart col-md-4 col-sm-12'>
-                <h3>booking: {carts.length}</h3>
+                <SideCart sideCart={sideCart}></SideCart>
           </div>
         </div>
     );

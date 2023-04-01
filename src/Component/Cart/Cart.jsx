@@ -4,14 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Cart = (props) => {
-    const {pic, name,id, date, profile,title,time} = props.cart;
+    const {pic, name,id,read, date, profile,title,time} = props.cart;
       const HandleCart = props.HandleCart;
+      const HandleTime = props.HandleTime;
+
     return (
         <div className='carts'>  
             <img src={pic} alt="" />
-
-          
-           
                 
                 <div className='d-flex justify-content-between px-2'>
                 <div className='d-flex'> 
@@ -33,16 +32,9 @@ const Cart = (props) => {
                 <div>
                    <h6> {title}</h6>
                    <p>#learner #coder</p>
-                  <p> <a href="#">mark as read</a></p>
+                <p> <a href="#" onClick={() => HandleCart(props.cart)}>read {time}</a></p>
                 </div>
     
-        
-             
-            
-     
-         <div className='cart'>
-            hhh
-      </div>
         </div>
       
     );
