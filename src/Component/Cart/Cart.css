@@ -3,6 +3,7 @@
     width: 80%;
     height: auto;
     margin: 0 auto;
+    
 }
 .carts img{
     width: 100%;
@@ -17,7 +18,8 @@
 }
 .carts p{
     font-size: 10px;
-   font-weight:500
+    font-weight:500;
+    padding-left: 10px;
 }
 .SideCart{
     background-color: aliceblue;
@@ -26,4 +28,7 @@
     text-align: center;
     font-size: large;
     font-weight: bold;
+}
+.carts h6 {
+    padding-left: 10px;
 }

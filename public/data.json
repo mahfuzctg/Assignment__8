@@ -12,12 +12,13 @@
     },
     {
         "name": "Anisul Islam",
-        "title" : "Let's learn programming form anisul islam ",
+        "title" : "How to be a pern developer?",
         "id": "#1a3a3b",
         "date": "march 21 (10 days ago)",
         "pic": "https://i.postimg.cc/L5LNxBQ8/ani.jpg",
         "profile": "https://i.postimg.cc/sg73w2BK/anisul-islam.png",
-        "time":"8min"
+        "time":"8",
+        "read" : "mark as read" 
         
     },
     {
@@ -27,7 +28,8 @@
         "date": "march 30 (1 days ago)",
          "pic": "https://i.postimg.cc/zD9ZVh0B/sumit-saha.jpg",
          "profile": "https://i.postimg.cc/mrft73fr/sumit-saha-profile.jpg",
-         "time":"10min"
+         "time":"10",
+         "read" : "mark as read" 
     },
     {
         "name": "Ali Hossain ",
@@ -36,6 +38,7 @@
         "date": "march 26 (5 days ago)",
           "pic": "https://i.postimg.cc/TYRjj7kH/ali-hossain.jpg",
           "profile": "https://i.postimg.cc/136zRgn1/ali-hossain-profile.jpg",
-          "time":"6min"
+          "time":"6",
+          "read" : "mark as read" 
     }
 ]

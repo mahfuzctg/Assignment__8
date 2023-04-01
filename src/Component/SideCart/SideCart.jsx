@@ -1,15 +1,21 @@
 import React from 'react';
 
-const SideCart = ({sideCart}) => {
-    let total = '';
-  for (const cart of sideCart){
-    total = total + cart.title;
-  }
+const SideCart = ({sideCart, timeUpdate}) => {
     return (
-        <div>
-            <h3>booking: {sideCart.length}</h3>
-            <div className='cart bg-success'>
-                <h6>{total}</h6>
+        <div className='col-lg-4'>
+            <div className='container bg-danger mb-2'>
+            <h1>Spend time on read: {sideCart.length}</h1>
+               
+            </div>
+            
+            <div className='container col-lg-4'>
+            <h1>time updated {timeUpdate}</h1>
+             <div className=' bg-danger'>
+
+                {
+                    sideCart.map(data => <h1>{data.title}</h1>)
+                }
+                </div>
             </div>
         </div>
     );

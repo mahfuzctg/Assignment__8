@@ -1,0 +1,9 @@
+.faq{
+    background-color: #F0F8FF;
+    text-align: justify;
+    width: 80%;
+    border-radius: 5px;
+}
+.faq h6{
+    font-weight: bold;
+}

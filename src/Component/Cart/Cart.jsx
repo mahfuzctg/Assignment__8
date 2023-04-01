@@ -6,7 +6,8 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Cart = (props) => {
     const {pic, name,id,read, date, profile,title,time} = props.cart;
       const HandleCart = props.HandleCart;
-      const HandleTime = props.HandleTime;
+      const timeUpdated = props.timeUpdated
+      
 
     return (
         <div className='carts'>  
@@ -24,19 +25,19 @@ const Cart = (props) => {
                       </div>
                 </div>
                 <div className='d-flex ms-5 align-items-center'>
-                 <p>{time}</p>
+                 <p>{time} min read</p>
                 <button onClick={()=> HandleCart(props.cart)} className='btn '><FontAwesomeIcon icon={faBookmark} /></button>
                 </div>
                 
                 </div>
-                <div>
+                <div className='container p-4'>
                    <h6> {title}</h6>
                    <p>#learner #coder</p>
-                <p> <a href="#" onClick={() => HandleCart(props.cart)}>read {time}</a></p>
+                  
+                  <button onClick={() => timeUpdated(time)}>read{read}</button>
                 </div>
-    
+                  
         </div>
-      
     );
 };
 
