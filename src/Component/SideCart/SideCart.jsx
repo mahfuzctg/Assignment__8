@@ -1,21 +1,20 @@
 import React from 'react';
-
+import './SideCart.css';
 const SideCart = ({sideCart, timeUpdate}) => {
     return (
-        <div className='col-lg-4'>
-            <div className='container bg-danger mb-2'>
-            <h1>Spend time on read: {sideCart.length}</h1>
+        <div className='side-cart container'>
+            <div>
+            <h6 className='bg-light p-4'>Spend time on read:{timeUpdate}</h6>
                
             </div>
             
-            <div className='container col-lg-4'>
-            <h1>time updated {timeUpdate}</h1>
-             <div className=' bg-danger'>
+            <div>
+            <h6>Bookmarked blogs: {sideCart.length}</h6>
+          
 
                 {
-                    sideCart.map(data => <h1>{data.title}</h1>)
+                    sideCart.map(data =><h6 className='bg-light p-4'>{data.title}</h6>)
                 }
-                </div>
             </div>
         </div>
     );

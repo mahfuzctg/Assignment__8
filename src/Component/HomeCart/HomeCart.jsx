@@ -23,8 +23,8 @@ const HomeCart = () => {
     const HandleCart = (cart) => {
         const getCart = sideCart.find(cart => cart.id === cart.id);
         if(getCart){
-            const notify =  toast("Ops! in already added !");
-            return notify;
+            toast("Ops! in already added !");
+           
         }
         const newData = [...sideCart, cart]
         setsideCart(newData )
@@ -33,7 +33,7 @@ const HomeCart = () => {
     return (
         
         <div className='main row py-5'>
-           <div className='container rightCart col-md-8 col-sm-12'>
+           <div className='container rightCart col-sm-12 col-md-8'>
                  
                    {
                     carts.map(cart => <Cart key={cart.id} 
@@ -44,7 +44,7 @@ const HomeCart = () => {
                     ></Cart>)
                    }
            </div>
-          <div className='p-2'>
+          <div className='leftcart col-sm-12 col-lg-4'>
               
                 <SideCart timeUpdate = {timeUpdate} sideCart={sideCart}></SideCart>
                 <ToastContainer/>

@@ -24,17 +24,20 @@ const Cart = (props) => {
                       <p className='data'>{date}</p>
                       </div>
                 </div>
+
                 <div className='d-flex ms-5 align-items-center'>
                  <p>{time} min read</p>
                 <button onClick={()=> HandleCart(props.cart)} className='btn '><FontAwesomeIcon icon={faBookmark} /></button>
                 </div>
                 
                 </div>
-                <div className='container p-4'>
-                   <h6> {title}</h6>
+                <div className='tiles'>
+                   <h6 className='heade6'> {title}</h6>
                    <p>#learner #coder</p>
                   
-                  <button onClick={() => timeUpdated(time)}>read{read}</button>
+                
+                 <p><button className='btn btn-outline-dark' onClick={() => timeUpdated(time)}>read{read}</button></p>
+                
                 </div>
                   
         </div>
