@@ -4,7 +4,7 @@ const SideCart = ({sideCart, timeUpdate}) => {
     return (
         <div className='side-cart container'>
             <div>
-            <h6 className='bg-light p-4'>Spend time on read:{timeUpdate}</h6>
+            <h6 className='bg-light p-4'>Spend time on read: {timeUpdate}</h6>
                
             </div>
             
